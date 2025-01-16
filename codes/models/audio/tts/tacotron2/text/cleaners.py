@@ -22,46 +22,46 @@ _whitespace_re = re.compile(r'\s+')
 
 # List of (regular expression, replacement) pairs for abbreviations:
 _abbreviations = [(re.compile('\\b%s\\.' % x[0], re.IGNORECASE), x[1]) for x in [
-  ('g.', 'godina')
-  ('r.', 'razred')
-  ('t.', 'tona')
-  ('n. e.', 'nove ere')
-  ('p.n.e.', 'pre nove ere')
-  ('l. k.', 'lična karta')
-  ('br.', 'broj')
-  ('sv.', 'sveti')
-  ('str.', 'strana')
-  ('mn.', 'množina')
-  ('i dr.', 'i drugi')
-  ('i sl.', 'i slično')
-  ('ul.', 'ulica')
-  ('inž.', 'inženjer')
-  ('srp.', 'srpski')
-  ('dr', 'doktor')
-  ('mr', 'magistar')
-  ('gdin', 'gospodin')
-  ('gđa', 'gospođa')
-  ('gđica', 'gospođica')
-  ('tzv.', 'takozvani')
-  ('itd.', ' i tako dalje')
-  ('bb.', 'bez broja')
-  ('npr.', 'na primer')
-  ('V', 'volt')
-  ('W', 'vat')
-  ('J', 'džul')
-  ('A', 'amper')
-  ('T', 'tesla')
-  ('g', 'gram')
-  ('kg', 'kilogram')
-  ('l', 'litar')
-  ('m', 'metar')
-  ('km', 'kilometar')
-  ('cm', 'centimetar')
-  ('SANU', 'Srpska akademija nauka i umetnosti')
-  ('VMA', 'Vojnomedicinska akademija')
-  ('MMF', 'Međunarodni monetarni fond')
-  ('NIN', 'Nedeljne informativne novine')
-  ('AVNOJ', 'Antifašističko veće narodnog oslobođenja Jugoslavije')
+  ('g.', 'godina'),
+  ('r.', 'razred'),
+  ('t.', 'tona'),
+  ('n. e.', 'nove ere'),
+  ('p.n.e.', 'pre nove ere'),
+  ('l. k.', 'lična karta'),
+  ('br.', 'broj'),
+  ('sv.', 'sveti'),
+  ('str.', 'strana'),
+  ('mn.', 'množina'),
+  ('i dr.', 'i drugi'),
+  ('i sl.', 'i slično'),
+  ('ul.', 'ulica'),
+  ('inž.', 'inženjer'),
+  ('srp.', 'srpski'),
+  ('dr', 'doktor'),
+  ('mr', 'magistar'),
+  ('gdin', 'gospodin'),
+  ('gđa', 'gospođa'),
+  ('gđica', 'gospođica'),
+  ('tzv.', 'takozvani'),
+  ('itd.', ' i tako dalje'),
+  ('bb.', 'bez broja'),
+  ('npr.', 'na primer'),
+  ('V', 'volt'),
+  ('W', 'vat'),
+  ('J', 'džul'),
+  ('A', 'amper'),
+  ('T', 'tesla'),
+  ('g', 'gram'),
+  ('kg', 'kilogram'),
+  ('l', 'litar'),
+  ('m', 'metar'),
+  ('km', 'kilometar'),
+  ('cm', 'centimetar'),
+  ('SANU', 'Srpska akademija nauka i umetnosti'),
+  ('VMA', 'Vojnomedicinska akademija'),
+  ('MMF', 'Međunarodni monetarni fond'),
+  ('NIN', 'Nedeljne informativne novine'),
+  ('AVNOJ', 'Antifašističko veće narodnog oslobođenja Jugoslavije'),
 ]]
 
 
