@@ -125,7 +125,7 @@ path:
 
 # afaik all units here are measured in **steps** (i.e. one batch of batch_size is 1 unit)
 train: # CHANGEME: ALL OF THESE PARAMETERS SHOULD BE EXPERIMENTED WITH
-  niter: 50000
+  niter: 5000
   warmup_iter: -1
   mega_batch_factor: 4    # <-- Gradient accumulation factor. If you are running OOM, increase this to [2,4,8].
   val_freq: 500 # TODO set this to epoch size * something
@@ -156,7 +156,7 @@ upgrades:
   # For Colab use 1 or 2 for gDrive and 5 for instance drive
   # 1 == Leave last saved checkpoint + last saved state (about 6.8 GB).
   # 2 == Leave last 2 saved checkpoints + last saved states (about 2 *~ 6.8 GB =~ 13.6 GB).
-  number_of_checkpoints_to_save: 0
+  number_of_checkpoints_to_save: 1
   # Variable: number_of_states_to_save
   # Description: Define how many states should be saved on disk (1 state =~ 3.4 GB)
   # if disable_state_saving is set as true this option will be inactive
@@ -166,4 +166,4 @@ upgrades:
   # For Colab use 1 or 2 for gDrive and 5 for instance drive
   # 1 == Leave last saved state (about 3.4 GB).
   # 2 == Leave last 2 saved states (about 2 *~ 3.4 GB =~ 6.8 GB).
-  number_of_states_to_save: 0
+  number_of_states_to_save: 1
