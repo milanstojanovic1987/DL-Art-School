@@ -120,7 +120,7 @@ networks:
 
 path:
   pretrain_model_gpt: '../experiments/autoregressive.pth' # CHANGEME: copy this from tortoise cache
-  strict_load: true
+  strict_load: false
   #resume_state: ../experiments/train_imgnet_vqvae_stage1/training_state/0.state   # <-- Set this to resume from a previous training state.
 
 # afaik all units here are measured in **steps** (i.e. one batch of batch_size is 1 unit)
