@@ -10,7 +10,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import distributed
 from transformers.models.wav2vec2.modeling_wav2vec2 import _compute_mask_indices, _sample_negative_indices
-from transformers.deepspeed import is_deepspeed_zero3_enabled
+from transformers.integrations import deepspeed
 
 from models.arch_util import ResBlock
 from trainer.networks import register_model
