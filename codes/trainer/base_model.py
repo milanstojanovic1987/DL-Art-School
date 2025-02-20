@@ -128,7 +128,7 @@ class BaseModel():
                 load_net_clean[k.replace('module.', '')] = v
             else:
                 load_net_clean[k] = v
-        network.load_state_dict(load_net_clean, strict=strict)
+        network.load_state_dict(load_net_clean, strict=False)
 
 
     def consolidate_state(self):
